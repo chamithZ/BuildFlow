@@ -38,4 +38,34 @@ public class UserService {
         return modelMapper.map(userList,new TypeToken<ArrayList<UserDTO>>(){
         }.getType());
     }
+
+    public UserDTO getSingleUser(int userId){
+        if(userRepo.existsById(userId)){
+            User user = userRepo.findById(userId).orElse(null);
+            return modelMapper.map(user,UserDTO.class);
+        }
+        else {
+            return null;
+        }
+    }
+
+    public String deleteUser(int userId){
+        if(userRepo.existsById(userId)){
+            userRepo.deleteById(userId);
+            return VarList.RSP_SUCCESS;
+        }
+        else{
+            return VarList.RSP_NO_DATA_FOUND;
+        }
+    }
+
+    public String updateUser(UserDTO userDTO){
+        if(userRepo.existsById(userDTO.getUserId())){
+            userRepo.save(modelMapper.map(userDTO,User.class));
+            return  VarList.RSP_SUCCESS;
+        }
+        else{
+            return VarList.RSP_NO_DATA_FOUND;
+        }
+    }
 }
