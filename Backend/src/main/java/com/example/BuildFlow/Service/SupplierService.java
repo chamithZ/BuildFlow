@@ -1,4 +1,4 @@
-package com.example.BuildFlow.Services;
+package com.example.BuildFlow.Service;
 
 import com.example.BuildFlow.DTO.SupplierDTO;
 import com.example.BuildFlow.Entity.Supplier;

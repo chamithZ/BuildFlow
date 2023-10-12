@@ -2,7 +2,7 @@ package com.example.BuildFlow.Controller;
 
 import com.example.BuildFlow.DTO.ResponseDTO;
 import com.example.BuildFlow.DTO.SupplierDTO;
-import com.example.BuildFlow.Services.SupplierService;
+import com.example.BuildFlow.Service.SupplierService;
 import com.example.BuildFlow.Utill.VarList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -27,13 +27,13 @@ public class SupplierCtrl {
 
         try{
             String res= supplierService.addSupplier(supplierDTO);
-            if(res.equals("000")){
+            if(res.equals("00")){
                 responseDTO.setCode(VarList.RSP_DUPLICATED );
                 responseDTO.setMessage("Success");
                 responseDTO.setContent(supplierDTO);
                 return new ResponseEntity(responseDTO, HttpStatus.ACCEPTED);
 
-            }else if(res.equals("006")){
+            }else if(res.equals("06")){
                 responseDTO.setCode(VarList.RSP_DUPLICATED );
                 responseDTO.setMessage("Employee registered");
                 responseDTO.setContent(supplierDTO);
@@ -59,13 +59,13 @@ public class SupplierCtrl {
 
         try{
             String res= supplierService.updateSupplier(supplierDTO);
-            if(res.equals("000")){
+            if(res.equals("00")){
                 responseDTO.setCode(VarList.RSP_DUPLICATED );
                 responseDTO.setMessage("Success");
                 responseDTO.setContent(supplierDTO);
                 return new ResponseEntity(responseDTO, HttpStatus.ACCEPTED);
 
-            }else if(res.equals("001")){
+            }else if(res.equals("01")){
                 responseDTO.setCode(VarList.RSP_NO_DATA_FOUND );
                 responseDTO.setMessage("Not a Registered member ");
                 responseDTO.setContent(supplierDTO);
@@ -90,7 +90,7 @@ public class SupplierCtrl {
     public ResponseEntity deleteSupplier(@PathVariable int supplierId){
         try {
             String supplier = supplierService.deleteSupplier(supplierId);
-            if (supplier.equals("000")) {
+            if (supplier.equals("00")) {
                 responseDTO.setCode(VarList.RSP_DUPLICATED);
                 responseDTO.setMessage("Success");
                 responseDTO.setContent(supplier);
