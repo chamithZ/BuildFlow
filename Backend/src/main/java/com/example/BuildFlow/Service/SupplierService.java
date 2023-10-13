@@ -55,6 +55,15 @@ public class SupplierService {
 
         }.getType());
 
+    }
 
+    public SupplierDTO getSupplier(int supplierId) {
+        if(supplierRepo.existsById(supplierId)){
+            Supplier sup =supplierRepo.findById(supplierId).orElse(null);
+            return modelMapper.map(sup,SupplierDTO.class);
+        }
+        else{
+            return null;
+        }
     }
 }
