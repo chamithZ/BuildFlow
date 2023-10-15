@@ -13,9 +13,11 @@ public class BuildFlowApplication {
 		SpringApplication.run(BuildFlowApplication.class, args);
 	}
 
-
 	@Bean
-	public ModelMapper modelMapper () {
-		return new ModelMapper() ;
+	public ModelMapper modelMapper(){
+		return new ModelMapper();
 	}
+
+
+
 }
