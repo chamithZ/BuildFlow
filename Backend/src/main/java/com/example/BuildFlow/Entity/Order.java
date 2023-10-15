@@ -20,5 +20,5 @@ public class Order {
     String requiredDate;
     int quantity;
     String description;
-    String orderStatus;
+    boolean orderStatus;
 }
