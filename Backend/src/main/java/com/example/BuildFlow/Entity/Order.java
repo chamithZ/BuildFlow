@@ -19,6 +19,7 @@ public class Order {
     String deliveryAddress;
     String requiredDate;
     int quantity;
+    double price;
     String description;
     String orderStatus;
 }
