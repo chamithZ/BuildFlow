@@ -11,6 +11,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("api/order")
 
@@ -133,6 +135,24 @@ public class OrderCtrl {
             responseDTO.setMessage(e.getMessage());
             responseDTO.setContent(e);
             return new ResponseEntity(responseDTO, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+
+    @GetMapping("/getAllOrders")
+    public ResponseEntity getAllSuppliers(){
+        try{
+            List<OrderDTO> order=orderService.getAllOrders();
+            responseDTO.setCode(VarList.RSP_DUPLICATED );
+            responseDTO.setMessage("Success");
+            responseDTO.setContent(order);
+            return new ResponseEntity(responseDTO, HttpStatus.ACCEPTED);
+
+        }catch(Exception ex){
+            responseDTO.setCode(VarList.RSP_ERROR);
+            responseDTO.setMessage(ex.getMessage());
+            responseDTO.setContent((null));
+            return new ResponseEntity(responseDTO,HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
