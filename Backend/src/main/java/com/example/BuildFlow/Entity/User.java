@@ -20,4 +20,7 @@ public class User {
     private String address;
     private double salary;
     private String status ;      // this is not sure about the type lets discuss this
+    private String roles ;
+    private String password;
+
 }

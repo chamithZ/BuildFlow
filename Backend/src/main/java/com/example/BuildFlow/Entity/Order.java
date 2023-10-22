@@ -21,5 +21,5 @@ public class Order {
     int quantity;
     double price;
     String description;
-    String orderStatus;
+    boolean orderStatus;
 }
