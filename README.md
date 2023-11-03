@@ -31,6 +31,16 @@ Screenshots of  webapp
 
 ![Screenshot 2023-11-03 213622](https://github.com/chamithZ/BuildFlow/assets/89042294/2a2fbf3f-0190-4ab2-ad58-836547b41e95)
 
+Screenshots of  mobile app
+
+![Screenshot 2023-11-03 220106](https://github.com/chamithZ/BuildFlow/assets/89042294/e913a9b2-0866-44e8-abe2-48626efd7c63)
+
+![Screenshot 2023-11-03 220131](https://github.com/chamithZ/BuildFlow/assets/89042294/704c29aa-0243-4851-9b08-596f9c9c4d1f)
+
+![Screenshot 2023-11-03 220205](https://github.com/chamithZ/BuildFlow/assets/89042294/ebd61b1b-313f-40cb-b8e0-0eec3deaa2cf)
+
+
+
 
 
 
