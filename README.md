@@ -18,3 +18,21 @@ Role-based Access Control: Hierarchical access controls to manage varying levels
 
 About the Repository:
 This repository contains the source code for the BuildFlow project, including the backend implemented with Spring Boot, along with the frontend components developed in React for the web application and React Native for the mobile application
+
+Screenshots of  webapp
+
+![Screenshot 2023-11-03 213242](https://github.com/chamithZ/BuildFlow/assets/89042294/8bf1abbf-c959-483f-b60a-940b5a45629b)
+
+![Screenshot 2023-11-03 211737](https://github.com/chamithZ/BuildFlow/assets/89042294/19d9891b-4c91-49ad-b07a-d274dd37e913)
+
+![Screenshot 2023-11-03 212542](https://github.com/chamithZ/BuildFlow/assets/89042294/56bc00a9-13fd-4b88-86e1-46f12511f586)
+
+![Screenshot 2023-11-03 214223](https://github.com/chamithZ/BuildFlow/assets/89042294/428d2357-fa3e-4915-a53d-cc7a64d62206)
+
+![Screenshot 2023-11-03 213622](https://github.com/chamithZ/BuildFlow/assets/89042294/2a2fbf3f-0190-4ab2-ad58-836547b41e95)
+
+
+
+
+
+
