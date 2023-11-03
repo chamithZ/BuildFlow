@@ -1,0 +1,34 @@
+/* Customize the navigation bar */
+.navbar-container {
+  background-color: #333; /* Background color of the navigation bar */
+  color: #fff; /* Text color */
+  padding: 10px; /* Padding around the navigation bar */
+}
+
+.navbar-brand {
+  color: #fff; /* Color of the navigation bar brand text */
+}
+
+.navbar-toggler {
+  background-color: #fff; /* Background color of the toggler button */
+}
+
+.nav-link {
+  color: #fff; /* Color of the navigation links */
+  text-decoration: none; /* Remove underlines from links */
+}
+
+/* Customize the profile and logout buttons */
+.toggle {
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 5px; /* Rounded button corners */
+  margin-right: 10px; /* Right margin for buttons */
+}
+
+.toggle:hover {
+  background-color: #0056b3; /* Button background color on hover */
+}
+
+/* Additional styles can be added based on your design preferences */
